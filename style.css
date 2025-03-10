@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: white;
+}
+
+/* Header */
+header {
+    background: #1a1a1a;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+}
+
+/* Games Section */
+.games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.game {
+    background: #222;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s;
+}
+
+.game img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.game:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #1a1a1a;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .games {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
+/* Game Details Page */
+.game-details {
+    text-align: center;
+    padding: 30px;
+}
+
+.game-details img {
+    width: 60%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.game-details h2 {
+    font-size: 24px;
+}
+
+.game-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.game-details li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Back Button */
+nav a {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #ff3c00;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background: #cc2f00;
+}
+
